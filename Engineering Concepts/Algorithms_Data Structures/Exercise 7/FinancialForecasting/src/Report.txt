@@ -1,0 +1,40 @@
+Aim:
+To develop a financial forecasting tool using a recursive algorithm and analyze its performance.
+
+Theory:
+Recursion
+Recursion is a programming technique in which a method calls itself to solve a smaller instance of the same problem. A recursive algorithm consists of:
+
+Base Case: Terminates the recursion.
+Recursive Case: Calls the same method with a smaller input.
+
+Recursion simplifies problems that can be divided into smaller subproblems.
+
+
+Algorithm:
+    - Recursive Financial Forecasting Algorithm
+    - Accept the present value, growth rate, and number of years.
+    - If the number of years is 0, return the present value (base case).
+    - Otherwise, multiply the result by (1 + growthRate).
+    - Recursively call the method with years - 1.
+    - Return the calculated future value.
+
+Analysis:
+Time Complexity:
+The recursive method performs one recursive call for each year.
+Therefore: Time Complexity = O(n) where n is the number of years.
+
+Space Complexity:
+Each recursive call occupies space on the call stack.
+Therefore: Space Complexity = O(n)
+
+
+Optimization:
+
+The recursive solution can be optimized by:
+    - Using an iterative approach, which reduces space complexity to O(1).
+    - Using the mathematical formula: FV = PV × (1 + r)^n, This avoids repeated recursive calls and improves efficiency.
+
+
+Conclusion:
+The financial forecasting tool was successfully implemented using recursion. The recursive approach provides a simple and readable solution for calculating future values based on a growth rate. The algorithm has a time complexity of O(n) and a space complexity of O(n). For larger forecasting periods, iterative methods or direct mathematical formulas are more efficient and reduce memory usage.

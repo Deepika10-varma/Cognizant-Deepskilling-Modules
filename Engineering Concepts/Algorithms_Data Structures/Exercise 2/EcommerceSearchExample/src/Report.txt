@@ -1,0 +1,45 @@
+1. Big O Notation
+Big O notation is used to describe the performance of an algorithm as the input size increases. It measures the growth rate of execution time and helps compare algorithm efficiency.
+It helps us:
+   Compare algorithm efficiency.
+   Predict performance for large datasets.
+   Choose the best algorithm for a given problem.
+
+Search Scenarios
+Best Case:
+The item is found immediately.(Searching for the first element.)
+
+Linear Search: O(1)
+Binary Search: O(1)
+
+Average Case:
+The item is somewhere in the middle.
+
+Linear Search: O(n)
+Binary Search: O(log n)
+
+Worst Case:
+The item is at the end or not present.
+
+Linear Search: O(n)
+Binary Search: O(log n)
+
+
+Time Complexity Comparison for Linear search and binary search:
+| Algorithm     | Best Case | Average Case | Worst Case |
+| ------------- | --------- | ------------ | ---------- |
+| Linear Search | O(1)      | O(n)         | O(n)       |
+| Binary Search | O(1)      | O(log n)     | O(log n)   |
+
+
+
+2. Analysis
+
+Linear Search checks every product sequentially until the target is found. As the number of products increases, the search time grows linearly.
+
+Binary Search repeatedly divides the sorted product list into halves, reducing the search space significantly. This results in much faster searching for large datasets.
+
+
+3. Conclusion
+
+Binary Search is more suitable for an e-commerce platform because it provides O(log n) search performance, making it much faster than Linear Search for large product catalogs. However, Binary Search requires the product data to be stored in sorted order.

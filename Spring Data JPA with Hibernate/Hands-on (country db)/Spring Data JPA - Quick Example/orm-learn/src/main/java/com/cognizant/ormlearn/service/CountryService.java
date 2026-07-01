@@ -61,4 +61,18 @@ public class CountryService {
         return countryRepository.findByNameContainingIgnoreCase(text);
 
     }
+    
+    @Transactional
+    public List<Country> searchCountriesSorted(String text) {
+
+        return countryRepository.findByNameContainingIgnoreCaseOrderByNameAsc(text);
+
+    }
+
+    @Transactional
+    public List<Country> searchCountriesStartingWith(String alphabet) {
+
+        return countryRepository.findByNameStartingWithIgnoreCase(alphabet);
+
+    }
 }

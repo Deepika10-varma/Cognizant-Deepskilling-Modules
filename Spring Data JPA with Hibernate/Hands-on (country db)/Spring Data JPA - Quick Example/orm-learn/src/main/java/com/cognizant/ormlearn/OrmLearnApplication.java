@@ -45,6 +45,10 @@ public class OrmLearnApplication {
         testDeleteCountry();
         
         testSearchCountries();
+        
+        testSearchCountriesSorted();
+
+        testSearchCountriesStartingWith();
     }
 
     private static void testGetAllCountries() {
@@ -145,5 +149,29 @@ public class OrmLearnApplication {
         LOGGER.debug("Matching Countries={}", countries);
 
         LOGGER.info("End - Search Countries");
+    }
+    
+    private static void testSearchCountriesSorted() {
+
+        LOGGER.info("Start - Search Countries Sorted");
+
+        List<Country> countries =
+                countryService.searchCountriesSorted("ou");
+
+        LOGGER.debug("Countries={}", countries);
+
+        LOGGER.info("End - Search Countries Sorted");
+    }
+    
+    private static void testSearchCountriesStartingWith() {
+
+        LOGGER.info("Start - Search Countries Starting With");
+
+        List<Country> countries =
+                countryService.searchCountriesStartingWith("Z");
+
+        LOGGER.debug("Countries={}", countries);
+
+        LOGGER.info("End - Search Countries Starting With");
     }
 }

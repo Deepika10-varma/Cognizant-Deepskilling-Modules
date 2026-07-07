@@ -31,14 +31,14 @@ public class OrmLearnOrMappingApplication {
     	employeeService = context.getBean(EmployeeService.class);
     	departmentService = context.getBean(DepartmentService.class);
 
-//    	testGetEmployee();
-//
-//    	testGetDepartment();
+     	testGetEmployee();
+
+    	testGetDepartment();
     	
-//    	testGetEmployeeSkills();
+    	testGetEmployeeSkills();
     	
-//    	testHQLQueries();
-//
+    	testHQLQueries();
+
     	testNativeQuery();
     }
 

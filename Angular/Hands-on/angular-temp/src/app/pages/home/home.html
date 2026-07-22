@@ -1,0 +1,48 @@
+<h1>{{ portalName }}</h1>
+
+<p>
+  Welcome to the Student Course Portal.
+</p>
+
+<p><strong>Shared Message:</strong> {{ sharedMessage }}</p>
+
+<button
+(click)="onEnrollClick()"
+[disabled]="!isPortalActive">
+
+Enroll Now
+
+</button>
+
+<button (click)="updateMessage()">
+    Update Shared Message
+</button>
+
+<p>{{ message }}</p>
+
+<br>
+
+<input
+type="text"
+[(ngModel)]="searchTerm"
+placeholder="Search Course">
+
+<p>Searching for : {{ searchTerm }}</p>
+
+<hr>
+
+<div>
+
+<h3>Portal Statistics</h3>
+
+<p>Courses Available : {{ courseCount }}</p>
+
+<p>Enrolled : 3</p>
+
+<p>GPA : 3.8</p>
+
+</div>
+
+<hr>
+
+<app-course-summary-widget></app-course-summary-widget>

@@ -1,0 +1,41 @@
+<h2>Available Courses</h2>
+
+<div *ngIf="selectedSemester">
+  <strong>Semester:</strong> {{ selectedSemester }}
+</div>
+
+<div *ngIf="loading$ | async">
+  Loading Courses...
+</div>
+
+<div *ngIf="error$ | async as error" class="error">
+  {{ error }}
+</div>
+
+<div
+  *ngFor="let course of (courses$ | async)"
+  class="course-card">
+
+  <h3>{{ course.name }}</h3>
+
+  <p>
+    <strong>Code:</strong>
+    {{ course.code }}
+  </p>
+
+  <p>
+    <strong>Credits:</strong>
+    {{ course.credits }}
+  </p>
+
+  <p>
+    <strong>Status:</strong>
+    {{ course.gradeStatus }}
+  </p>
+
+  <button
+    (click)="viewCourse(course.id)">
+    View Details
+  </button>
+
+</div>

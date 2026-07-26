@@ -84,3 +84,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+~$esults.docx
+~WRL2587.tmp

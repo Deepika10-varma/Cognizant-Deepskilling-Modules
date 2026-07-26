@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.user {
+  margin: 80px 180px;
+}
+
+.user h1 {
+  margin-bottom: 20px;
+}
+
+.user img {
+  width: 180px;
+  height: 180px;
+  border-radius: 6px;
+}

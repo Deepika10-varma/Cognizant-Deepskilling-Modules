@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 40px;
+}
+
+.section {
+  width: 30%;
+  padding: 20px;
+  border-right: 4px solid green;
+}
+
+.section:last-child {
+  border-right: none;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+h3,
+h4,
+p {
+  margin: 5px 0;
+}

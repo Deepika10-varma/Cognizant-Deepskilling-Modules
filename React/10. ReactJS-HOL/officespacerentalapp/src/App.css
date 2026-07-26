@@ -1,0 +1,22 @@
+.container {
+  width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.office-card {
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+img {
+  border-radius: 6px;
+}
+
+h2,
+h3 {
+  margin: 10px 0;
+}

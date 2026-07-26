@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+  width: 500px;
+  margin: 80px auto;
+}
+
+.form-container h1 {
+  color: red;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  padding: 8px;
+}
+
+input,
+textarea {
+  width: 220px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px 15px;
+}

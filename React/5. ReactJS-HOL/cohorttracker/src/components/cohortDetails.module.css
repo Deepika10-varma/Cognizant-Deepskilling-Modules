@@ -1,0 +1,28 @@
+.box {
+  width: 250px;
+  min-height: 200px;
+  display: inline-block;
+  margin: 10px;
+  padding: 18px;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  background: white;
+}
+
+h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+dt {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+dd {
+  margin: 2px 0 10px 20px;
+  color: #555;
+}

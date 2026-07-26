@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+}
+
+.buttons{
+    margin-bottom:20px;
+}
+
+.buttons button{
+    margin-right:10px;
+    padding:8px 15px;
+}
+
+.list{
+    display:flex;
+    gap:20px;
+}
+
+.card{
+    width:220px;
+    padding:20px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    background:white;
+}
+
+.light{
+    background:white;
+    color:black;
+    border:1px solid black;
+    padding:8px 15px;
+}
+
+.dark{
+    background:black;
+    color:white;
+    border:1px solid black;
+    padding:8px 15px;
+}
